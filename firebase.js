@@ -5,12 +5,12 @@ import * as firebase from "firebase";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyD7hrZLei65YBqf7tfJk7Du1HAMHcr5wJE",
-  authDomain: "ig-clone-react-native-60996.firebaseapp.com",
-  projectId: "ig-clone-react-native-60996",
-  storageBucket: "ig-clone-react-native-60996.appspot.com",
-  messagingSenderId: "836716631462",
-  appId: "1:836716631462:web:0bcdf394628fb44a406b67",
+  apiKey: process.env.APP_ENV_API_KEY,
+  authDomain: process.env.APP_ENV_AUTH_DOMAIN,
+  projectId: process.env.APP_ENV_PROJECT_ID,
+  storageBucket: process.env.APP_ENV_STORAGE_BUCKET,
+  messagingSenderId: process.env.APP_ENV_SENDER_ID,
+  appId: process.env.APP_ENV_APP_ID,
 };
 
 // Initialize Firebase
